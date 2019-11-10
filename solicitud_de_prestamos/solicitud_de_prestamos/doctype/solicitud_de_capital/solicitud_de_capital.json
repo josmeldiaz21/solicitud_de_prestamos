@@ -1,0 +1,76 @@
+{
+ "autoname": "PREST-.DD.-.MM.-.YYYY.-.######",
+ "creation": "2019-11-10 18:28:22.357544",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cliente",
+  "monto_del_prestamo",
+  "porcentaje",
+  "tipo_de_prestamo",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "Customer",
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cliente",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "monto_del_prestamo",
+   "fieldtype": "Currency",
+   "label": "Monto del prestamo"
+  },
+  {
+   "fieldname": "porcentaje",
+   "fieldtype": "Percent",
+   "label": "Porcentaje"
+  },
+  {
+   "fieldname": "tipo_de_prestamo",
+   "fieldtype": "Data",
+   "label": "Tipo de Prestamo"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Solicitud de Capital",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2019-11-10 18:47:33.255214",
+ "modified_by": "Administrator",
+ "module": "Solicitud de Prestamos",
+ "name": "Solicitud de Capital",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
